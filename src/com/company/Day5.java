@@ -4,7 +4,10 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
 
 public class Day5 {
 
@@ -21,7 +24,6 @@ public class Day5 {
         long result = Long.MAX_VALUE;
         List<String> input = getInput("input_day5.txt");
 //        List<String> input = getInput("input_day5_example.txt");
-
 
         Iterator<String> iterator = input.iterator();
         List<Long> seeds = Arrays.stream(iterator.next().substring("seeds: ".length()).split(" ")).map(Long::parseLong).toList();
