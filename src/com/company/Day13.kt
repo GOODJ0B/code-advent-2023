@@ -129,3 +129,4 @@ class Day13 {
         return differences == 1
     }
 }
+
